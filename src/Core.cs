@@ -7,7 +7,7 @@ using MelonLoader;
 using TooManyCooks;
 using UnityEngine;
 
-[assembly: MelonInfo(typeof(TooManyCooksMod), "TooManyCooks", "1.0.0", "dcdv9")]
+[assembly: MelonInfo(typeof(TooManyCooksMod), "TooManyCooks", "1.0.1", "f1zz1ec0ke")]
 [assembly: MelonGame("Biotech Gameworks", "Kebab Chefs! - Restaurant Simulator")]
 
 namespace TooManyCooks
