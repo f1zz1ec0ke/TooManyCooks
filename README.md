@@ -14,12 +14,12 @@ Raises the 4-player lobby cap in **Kebab Chefs! - Restaurant Simulator** to 6.
 3. Drop [`TooManyCooks.dll`](dist/TooManyCooks.dll) into the `Mods` folder next to the game exe(build instructions below if you prefer).
 4. Launch. You should see `[TooManyCooks] Ready. MaxPlayers=6` in the MelonLoader console.
 
+
 ### Does everyone need it?
 
 **Probably idk, just install it for everyone.** The host opens the bigger lobby, but an unmodded
 client only builds 4 lobby slots, so players 5 and 6 may be invisible to them. Untested.
 
-### If you just want to play the game with the mod then you don't need to read past here :)
 
 ### Can I use BepInEx for this?
 **BepInEx will not work.** The game is Unity 6.3 / IL2CPP metadata v39, and BepInEx's bundled
@@ -45,6 +45,7 @@ path has no dropdown and hardcodes 4, so with `false` that path stays a 4-player
 
 Higher than 6 is untested and increasingly likely to break things, but feel free to fork and do your thing.
 
+
 ## Known unknowns
 
 - **Old Markets Bug.** The mod this replaces reported *"all markets are closed when player size is bigger
@@ -57,6 +58,7 @@ Higher than 6 is untested and increasingly likely to break things, but feel free
 
 Press **F9** in a lobby to dump live slot/player state to `MelonLoader/Latest.log`. Attach that to
 any issue.
+
 
 ## How it works
 
@@ -81,6 +83,7 @@ The good news is the game's data layer is already player-count agnostic: `GameLo
 `IngameNetworkManager` key everything on `Dictionary`/`List`/`HashSet` by client id, and the game
 sets no Netcode connection-approval cap. Only the UI hardcodes 4.
 
+
 ## Building
 
 Requires the .NET SDK. You must have MelonLoader installed and have run the game once, so the
@@ -92,6 +95,7 @@ dotnet build -c Release -p:GameDir="C:\Program Files (x86)\Steam\steamapps\commo
 ```
 
 Output lands in `src/bin/Release/net6.0/TooManyCooks.dll`.
+
 
 ## Credits
 
