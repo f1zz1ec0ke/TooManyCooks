@@ -1,8 +1,8 @@
 # TooManyCooks
 
-Raises the 4-player lobby cap in **Kebab Chefs! - Restaurant Simulator** to 6.
+Raises the 4-player lobby cap in **Kebab Chefs! - Restaurant Simulator** to 6+.
 
-> See [Known unknowns](#known-unknowns) before you rely on this.
+> See [Known unknowns](#known-unknowns) before you rely on this. This is an early release and has not yet been thoroughly tested.
 
 ## Install
 
@@ -44,7 +44,7 @@ ForceMaxOnHost = true
 Set it to `false` if you want the **Create Room** dropdown to decide. Note the **Invite Friends**
 path has no dropdown and hardcodes 4, so with `false` that path stays a 4-player lobby.
 
-Higher than 6 is untested and increasingly likely to break things, but feel free to fork and do your thing.
+Higher than 6 is untested and increasingly likely to break things, I have no need for 6-7+ players but feel free to test it and let me know.
 
 
 ## Known unknowns
@@ -100,7 +100,7 @@ Output lands in `src/bin/Release/net6.0/TooManyCooks.dll`.
 
 ## Credits
 
-Successor to [requizm/KebabMultiplayerLimit](https://github.com/requizm/KebabMultiplayerLimit),
+Spiritual successor to [requizm/KebabMultiplayerLimit](https://github.com/requizm/KebabMultiplayerLimit),
 which did this for the Photon-era build. None of its code survives as the game replaced its entire
 networking stack with Unity Netcode for GameObjects + Facepunch Steamworks.
 
