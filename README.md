@@ -12,7 +12,8 @@ Raises the 4-player lobby cap in **Kebab Chefs! - Restaurant Simulator** to 6.
 2. Run the game once. MelonLoader generates its assemblies on first launch; this takes a minute and
    may look like it's hanging. Let it finish.
 3. Drop [`TooManyCooks.dll`](dist/TooManyCooks.dll) into the `Mods` folder next to the game exe(build instructions below if you prefer).
-4. Launch. You should see `[TooManyCooks] Ready. MaxPlayers=6` in the MelonLoader console.
+4. If you downloaded the DLL directly, you may need to 'Unblock' it from the properties windows in order for it to load.
+5. Launch. You should see `[TooManyCooks] Ready. MaxPlayers=6` in the MelonLoader console.
 
 
 ### Does everyone need it?
