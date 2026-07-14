@@ -14,14 +14,18 @@ Raises the 4-player lobby cap in **Kebab Chefs! - Restaurant Simulator** to 6.
 3. Drop [`TooManyCooks.dll`](dist/TooManyCooks.dll) into the `Mods` folder next to the game exe(build instructions below if you prefer).
 4. Launch. You should see `[TooManyCooks] Ready. MaxPlayers=6` in the MelonLoader console.
 
+### Does everyone need it?
+
+**Probably idk, just install it for everyone.** The host opens the bigger lobby, but an unmodded
+client only builds 4 lobby slots, so players 5 and 6 may be invisible to them. Untested.
+
+### If you just want to play the game with the mod then you don't need to read past here :)
+
+### Can I use BepInEx for this?
 **BepInEx will not work.** The game is Unity 6.3 / IL2CPP metadata v39, and BepInEx's bundled
 Cpp2IL only supports metadata 23–31 ([BepInEx#1266](https://github.com/BepInEx/BepInEx/issues/1266)).
 It fails before any mod loads. Use MelonLoader.
 
-### Does everyone need it?
-
-**Probably idk, install it on every machine.** The host opens the bigger lobby, but an unmodded
-client only builds 4 lobby slots, so players 5 and 6 may be invisible to them. Untested.
 
 ## Config
 
